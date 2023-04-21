@@ -24,11 +24,9 @@
     width: 95%;
     border: 2px solid var(--mycolor15);
     border-radius: 10px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 30px;
+    margin: 10px auto;
 }
-
 *{
     margin: 0;
     padding: 0;    
