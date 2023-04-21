@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 語法練習</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/mycss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&display=swap" rel="stylesheet">
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            background-color: var(--mycolor20);
+            border: 2px solid var(--mycolor15);
+            box-sizing: border-box;
+            display: inline-block;
+            margin-left: 5px;
+        }
+        .box01{
+            width: 164px;
+            height: 150px;
+            background-color: var(--mycolor20);
+            border: 2px solid var(--mycolor15);
+            box-sizing: border-box;
+            display: inline-block;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">1. border</div>
+        <div class="box border"></div>
+        <div class="box border-top"></div>
+        <div class="box border-bottom"></div>
+        <div class="box border-start"></div>
+        <div class="box border-end"></div>
+        <div class="fs-2 fw-900 text-light">border 移除邊框</div>
+        <div class="box border border-0"></div>
+        <div class="box border border-top-0"></div>
+        <div class="box border border-bottom-0"></div>
+        <div class="box border border-start-0"></div>
+        <div class="box border border-end-0"></div>
+        <div class="fs-2 fw-900 text-light">border 厚度和顏色</div>
+        <div class="box border"></div>
+        <div class="box border border-2 border-dark"></div>
+        <div class="box border border-3 border-info"></div>
+        <div class="box border border-4 border-danger"></div>
+        <div class="box border border-5 border-success"></div>
+        <div class="fs-2 fw-900 text-light">border 圓角</div>
+        <div class="box border"></div>
+        <div class="box border border-3 rounded"></div>
+        <div class="box border border-3 rounded-top"></div>
+        <div class="box border border-3 rounded-bottom"></div>
+        <div class="box border border-3 rounded-start"></div>
+        <div class="box border border-3 rounded-end"></div>
+        <div class="box border border-3 rounded-circle"></div>
+        <div class="box01 border border-3 rounded-pill"></div>
+    </div>
+    <div class="demo bg-light">
+        <div class="fs-2 fw-900 text-dark">2. 文字顏色</div>
+        <p class="text-success">文字顏色
+            <a href="#" class="link-dark">超連結</a>
+        </p>
+        <p class="text-info">文字顏色
+            <a href="#" class="link-warning">超連結</a>
+        </p>
+        <p class="text-danger">文字顏色
+            <a href="#" class="link-danger">超連結</a>
+        </p>
+        <p class="text-warning">文字顏色
+            <a href="#" class="link-light">超連結</a>
+        </p>
+        <p class="text-primary">文字顏色</p>
+        <p class="text-dark">文字顏色</p>
+        <p class="text-bg-danger">文字背景顏色</p>
+        <p class="text-bg-info">文字背景顏色</p>
+        <p class="text-bg-primary">文字背景顏色</p>
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">3. display</div>
+        <div class="p-2 text-bg-primary mb-3">d-inline</div>
+        <div class="p-2 text-bg-primary d-inline">d-inline</div>
+        <div class="p-2 text-bg-primary d-inline">d-inline</div>
+        <div class="p-2 text-bg-primary d-inline">d-inline</div>
+        <hr>
+        <span class="p-2 text-bg-primary">d-block</span>
+        <span class="p-2 text-bg-primary d-block mt-3">d-block</span>
+        <hr>
+        <span class="p-2 text-bg-primary d-none d-lg-block">手機顯示,PC lg顯示</span>
+        <hr>
+        <span class="p-2 text-bg-primary d-none d-xl-block">手機顯示,PC xl顯示</span>
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">4. 文字互動</div>
+        <p class="user-select-all">清除進步教育活動外觀秘密主板，責任點此保護承諾，人群得知門。</p>
+        <p class="user-select-auto">清除進步教育活動外觀秘密主板，責任點此保護承諾，人群得知門。</p>
+        <p class="user-select-none">清除進步教育活動外觀秘密主板，責任點此保護承諾，人群得知門。</p>        
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">5. overflow</div>
+        <div class="box">任意前後就是設施讓他，目的股份有限公司過了取消區域操作才是，資產當地，隊員的說什麼事來源這場用戶名然而講話師傅線路系統動畫依然預覽，幾年朋友，中港路完全成員進。</div>
+        <div class="box overflow-auto">任意前後就是設施讓他，目的股份有限公司過了取消區域操作才是，資產當地，隊員的說什麼事來源這場用戶名然而講話師傅線路系統動畫依然預覽，幾年朋友，中港路完全成員進。</div>
+        <div class="box overflow-visible">任意前後就是設施讓他，目的股份有限公司過了取消區域操作才是，資產當地，隊員的說什麼事來源這場用戶名然而講話師傅線路系統動畫依然預覽，幾年朋友，中港路完全成員進。</div>
+        <div class="box overflow-hidden">任意前後就是設施讓他，目的股份有限公司過了取消區域操作才是，資產當地，隊員的說什麼事來源這場用戶名然而講話師傅線路系統動畫依然預覽，幾年朋友，中港路完全成員進。</div>
+        <div class="box overflow-scroll">任意前後就是設施讓他，目的股份有限公司過了取消區域操作才是，資產當地，隊員的說什麼事來源這場用戶名然而講話師傅線路系統動畫依然預覽，幾年朋友，中港路完全成員進。</div>
+        <hr>
+        <div class="bg-primary w-100">
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled overflow-scroll">
+                <li class="p-3 text-nowrap">選單001- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單002- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單003- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單004- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單005- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單006- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單007- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單008- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單009- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單010- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單011- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單012- 主題標誌。</li>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="demo bg-secondary" style="height: 900px;">
+        <div class="fs-2 fw-900 text-light">6. 固定元件 sticky</div>
+        <div>
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled sticky-top bg-primary">
+                <li class="p-3 text-nowrap">選單001- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單002- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單003- 主題標誌。</li> 
+            </ul>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nesciunt facere cumque atque excepturi ex laudantium modi accusamus maiores! Omnis nobis accusantium facere pariatur delectus esse maiores cumque sunt qui placeat non quasi, quisquam sequi magnam numquam atque. Impedit dolor voluptate officia iure odio molestiae repudiandae adipisci atque quasi delectus explicabo quo iste accusamus at a aut asperiores temporibus, nihil earum ipsa dolore totam porro tempore. Eaque impedit eligendi adipisci illo amet asperiores a suscipit est unde dolorem. Incidunt culpa voluptas sapiente quia natus, commodi ab ex aliquid magni unde. Nesciunt voluptates corporis iusto quos facere quis ducimus? Veritatis pariatur iure dolorem blanditiis vitae voluptas neque, voluptates distinctio doloremque dolorum harum rerum atque soluta accusamus, vero tempore earum fugiat eligendi minima, amet esse eius. Quasi, modi reprehenderit? Sequi delectus similique cupiditate explicabo eos nihil, architecto iure consequatur veritatis est facilis, ad ab hic illo, quisquam animi? Possimus atque ducimus cum quia reprehenderit aperiam nemo laborum mollitia officiis error ullam, magnam magni assumenda, nobis culpa? Assumenda unde minus rem qui culpa velit deserunt soluta a dignissimos, earum aliquam veniam laborum ipsam quidem accusantium cupiditate nihil quibusdam blanditiis illum voluptatum nulla porro. Veniam quam autem possimus voluptates aperiam quae, harum omnis cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nesciunt facere cumque atque excepturi ex laudantium modi accusamus maiores! Omnis nobis accusantium facere pariatur delectus esse maiores cumque sunt qui placeat non quasi, quisquam sequi magnam numquam atque. Impedit dolor voluptate officia iure odio molestiae repudiandae adipisci atque quasi delectus explicabo quo iste accusamus at a aut asperiores temporibus, nihil earum ipsa dolore totam porro tempore. Eaque impedit eligendi adipisci illo amet asperiores a suscipit est unde dolorem. Incidunt culpa voluptas sapiente quia natus, commodi ab ex aliquid magni unde. Nesciunt voluptates corporis iusto quos facere quis ducimus? Veritatis pariatur iure dolorem blanditiis vitae voluptas neque, voluptates distinctio doloremque dolorum harum rerum atque soluta accusamus, vero tempore earum fugiat eligendi minima, amet esse eius. Quasi, modi reprehenderit? Sequi delectus similique cupiditate explicabo eos nihil, architecto iure consequatur veritatis est facilis, ad ab hic illo, quisquam animi? Possimus atque ducimus cum quia reprehenderit aperiam nemo laborum mollitia officiis error ullam, magnam magni assumenda, nobis culpa? Assumenda unde minus rem qui culpa velit deserunt soluta a dignissimos, earum aliquam veniam laborum ipsam quidem accusantium cupiditate nihil quibusdam blanditiis illum voluptatum nulla porro. Veniam quam autem possimus voluptates aperiam quae, harum omnis cupiditate.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nesciunt facere cumque atque excepturi ex laudantium modi accusamus maiores! Omnis nobis accusantium facere pariatur delectus esse maiores cumque sunt qui placeat non quasi, quisquam sequi magnam numquam atque. Impedit dolor voluptate officia iure odio molestiae repudiandae adipisci atque quasi delectus explicabo quo iste accusamus at a aut asperiores temporibus, nihil earum ipsa dolore totam porro tempore. Eaque impedit eligendi adipisci illo amet asperiores a suscipit est unde dolorem. Incidunt culpa voluptas sapiente quia natus, commodi ab ex aliquid magni unde. Nesciunt voluptates corporis iusto quos facere quis ducimus? Veritatis pariatur iure dolorem blanditiis vitae voluptas neque, voluptates distinctio doloremque dolorum harum rerum atque soluta accusamus, vero tempore earum fugiat eligendi minima, amet esse eius. Quasi, modi reprehenderit? Sequi delectus similique cupiditate explicabo eos nihil, architecto iure consequatur veritatis est facilis, ad ab hic illo, quisquam animi? Possimus atque ducimus cum quia reprehenderit aperiam nemo laborum mollitia officiis error ullam, magnam magni assumenda, nobis culpa? Assumenda unde minus rem qui culpa velit deserunt soluta a dignissimos, earum aliquam veniam laborum ipsam quidem accusantium cupiditate nihil quibusdam blanditiis illum voluptatum nulla porro. Veniam quam autem possimus voluptates aperiam quae, harum omnis cupiditate.</p>
+            <ul class="d-flex justify-content-between flex-nowrap list-unstyled sticky-bottom bg-primary">
+                <li class="p-3 text-nowrap">選單001- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單002- 主題標誌。</li>
+                <li class="p-3 text-nowrap">選單003- 主題標誌。</li> 
+            </ul>
+        </div>
+    </div> -->
+    <div class="demo bg-light">
+        <div class="fs-2 fw-900 text-dark">7. shadow</div>
+        <div class="p-3 text-bg-light mt-3 rounded shadow-sm">就在先生近期理解加。</div>
+        <div class="p-3 text-bg-light mt-3 rounded shadow">就在先生近期理解加。</div>
+        <div class="p-3 text-bg-light mt-3 rounded shadow-lg">就在先生近期理解加。</div>          
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">8. sizing(width)</div>
+        <div class="bg-primary p-3 mt-2 w-25">w-25</div>
+        <div class="bg-primary p-3 mt-2 w-50">w-50</div>
+        <div class="bg-primary p-3 mt-2 w-75">w-75</div>
+        <div class="bg-primary p-3 mt-2 w-100">w-100</div>
+    </div>
+    <div class="demo bg-secondary" style="height:200px;">
+        <div class="fs-2 fw-900 text-light">9. sizing(height)</div>
+        <div class="bg-primary d-inline-block p-3 h-25" style="width: 100px;">h-25</div>
+        <div class="bg-primary d-inline-block p-3 h-50" style="width: 100px;">h-50</div>
+        <div class="bg-primary d-inline-block p-3 h-75" style="width: 100px;">h75</div>
+        <div class="bg-primary d-inline-block p-3 h-100" style="width: 100px;">h-100</div>
+        <div class="bg-primary d-inline-block p-3 h-auto" style="width: 100px;">h-autoX</div>
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">10. vh , vw(註解處理)</div>
+        <!-- <div class="bg-info py-2 vh-100"></div>
+        <div class="bg-info py-2 vw-100"></div> -->
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">11. text</div>
+        <p class="text-start">常用好友規格接到版主獲得，四周歐洲任何。</p>
+        <p class="text-center">常用好友規格接到版主獲得，四周歐洲任何。</p>
+        <p class="text-end">常用好友規格接到版主獲得，四周歐洲任何。</p>
+        <hr>
+        <div class="fs-3">結合中斷點</div>
+        <p class="text-md-center text-lg-end">常用好友規格接到版主獲得，四周歐洲任何。</p>
+        <p class="text-md-start text-lg-end">常用好友規格接到版主獲得，四周歐洲任何。</p>
+    </div>
+    <div class="demo bg-secondary">
+        <div class="fs-2 fw-900 text-light">12. visible</div>
+        <div class="box"></div>
+        <div class="box invisible"></div>
+        <div class="box visible"></div>  
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
